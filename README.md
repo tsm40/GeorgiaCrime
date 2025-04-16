@@ -1,5 +1,7 @@
 # Crime Patterns in the U.S. and Georgia
 
+Live Scrollytelling Narrative Visualization: [https://tsm40.github.io/GeorgiaCrime/](https://tsm40.github.io/GeorgiaCrime/)
+
 ## Narrative & Goals
 
 This visualization explores how violent crime patterns have changed across the United States from the 20th to the 21st century, with a focused deep dive into Georgia’s trends over time. The goal is to communicate how crime has not only evolved in magnitude but also shifted geographically and by category. Through scrollytelling, the narrative guides users from a national-level overview to a detailed breakdown of Georgia’s crime rates, illustrating both historical context and specific data points. The combination of annotated text, interactive maps, scatterplots, and stacked area charts allows users to discover patterns and draw insights as they progress through the story.
@@ -12,3 +14,9 @@ This visualization explores how violent crime patterns have changed across the U
 - **Animated scatterplot** of Georgia’s historical violent crime data, broken down by crime type.
 - **Stacked area chart with slider** to explore changing crime proportions across selected year ranges.
 - **Smooth visual transitions** to support narrative flow and user engagement.
+
+## Resources
+
+- [https://app.unpkg.com/topojson-client@3.1.0](topoJSON Client)
+- [https://unpkg.com/scrollama](Scrollama)
+= [https://www.brennancenter.org/our-work/research-reports/what-caused-crime-decline](Brennan Center: What Caused the Crime Decline?)
