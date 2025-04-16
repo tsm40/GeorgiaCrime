@@ -1,0 +1,125 @@
+body {
+    font-family: 'Georgia', 'Georgia', cursive;
+    background-color: #121212; 
+    color: #e0e0e0; /* Light text */
+}
+
+#scrolly.side-by-side {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #121212; 
+    color: #e0e0e0; /* Light text */
+}
+
+/* Left side: SVG chart (65%) */
+#scrolly .graphic {
+    flex: 0 0 65%;
+    max-width: 65%;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #1e1e1e; /* Slightly lighter dark background */
+}
+
+/* Ensure SVG stretches to container */
+#scrolly svg {
+    width: 100%;
+    height: 80%;
+    background-color: #1e1e1e; /* Match graphic background */
+}
+
+/* Right side: scrolling steps (30%) */
+#scrolly .text {
+    flex: 0 0 30%;
+    max-width: 30%;
+    color: #e0e0e0; /* Light text */
+}
+
+/* Step container */
+article {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Sticky positioning for SVG fallback */
+svg {
+    position: sticky;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    transform: translate3d(0, 0, 0);
+    background-color: #1e1e1e; /* Match graphic background */
+    z-index: 0;
+}
+
+/* Step appearance */
+.step {
+    margin: 0 auto 2rem auto;
+    color: #e0e0e0; /* Light text */
+    background-color: rgba(255, 255, 255, 0.05); /* Subtle dark overlay */
+    border: 1px solid #333; /* Border for separation */
+}
+
+.step:last-child {
+    margin-bottom: 0;
+}
+
+.step.is-active h5 {
+    background-color: #eb5770; /* Vibrant accent color */
+    color: #121212; /* Dark text for contrast */
+}
+
+.step h5 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: #333; /* Darker background for headers */
+    color: #eb5770; /* Accent color */
+}
+
+.step p {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #b0b0b0; /* Softer light text for paragraphs */
+}
+
+
+
+#slider-container {
+    display: none; 
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+}
+#yearRange {
+    width: 100%;
+    max-width: 300px;
+}
+
+#tooltip {
+    position: absolute;
+    background-color: #ffffff;  
+    color: #333333;          
+    padding: 5px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 1000;
+}
+

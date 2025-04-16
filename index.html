@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Crime in Georgia</title>
+    <meta name="description" content="Scrollama: Sticky Overlay Example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/topojson-client@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-simple-slider@1.5.3/dist/d3-simple-slider.min.js"></script>
+
+
+</head>
+
+
+<body>
+    <main>
+        <section id="scrolly" class="side-by-side">
+            <article class="text">
+                
+                <div class="step" data-step="0">
+                    <h5>Intro</h5>
+                    <p>Crime in the United States has never been static. It shifts over time, varies by region, and takes on many different forms. 
+                       Understanding these patterns can reveal a lot about societal changes, policies, and challenges over the decades.</p>
+                </div>
+                
+                <div class="step" data-step="1">
+                    <h5>Map of Crime in the 20th Century</h5>
+                    <p>In the 20th century, violent crime began rising, particularly in the latter half of the century. 
+                       While the causes are debated, this era set the stage for many modern concerns about public safety.</p>
+                    <p style="font-style: italic;">Hover over a state to see the average violent crime rate in the 20th century.</p>
+                </div>
+                
+                <div class="step" data-step="2">
+                    <h5>Map of Crime in the 21st Century</h5>
+                    <p>As we moved into the 21st century, the landscape of violent crime shifted. Although overall crime rates began to decline in many areas, 
+                       the burden has become more concentrated in specific regions — particularly the South.</p>
+                    <p style="font-style: italic;">Hover over a state to see the average violent crime rate in the 21st century.</p>
+                </div>
+                
+                <div class="step" data-step="3">
+                    <h5>Crime in the State of Georgia</h5>
+                    <p>Zooming in on Georgia, the state has seen a moderate decline in violent crime since its 20th-century peak — 
+                       reflecting a broader national trend, but with its own distinct story.</p>
+                </div>
+                
+                <div class="step" data-step="4">
+                    <h5>Georgia Crime Scatterplot</h5>
+                    <p>This scatterplot visualizes Georgia’s crime data across time, broken down by category: homicide, rape, robbery, and aggravated assault. 
+                       Each dot represents the rate of a specific violent crime in a given year.</p>
+                    <p><a href="https://www.brennancenter.org/our-work/research-reports/what-caused-crime-decline" target="_blank">According to the Brennan Center,</a>
+                       the significant drop in violent crime during the mid-1990s was influenced by a combination of factors, including an increase in law enforcement,
+                       expanded prison populations, the waning of the crack epidemic, and even the legalization of abortion.</p>
+                    <p style="font-style: italic;">Hover over a data point to explore the trends more closely.</p>
+                </div>
+                
+                <div class="step" data-step="5">
+                    <h5>Aggravated Assault</h5>
+                    <p>Among all violent crimes, aggravated assault stands out as the most common in Georgia. 
+                       This pattern has remained consistent across decades and highlights ongoing issues around interpersonal violence.</p>
+                </div>
+                
+                <div class="step" data-step="6">
+                    <h5>Robbery</h5>
+                    <p>Robbery ranks as the second most prevalent violent crime. 
+                       While its rates have fluctuated, it continues to make up a significant portion of Georgia’s crime profile.</p>
+                </div>
+                
+                <div class="step" data-step="7">
+                    <h5>2019 Georgia Crime Bar Chart</h5>
+                    <p>In 2019, the most recent year in our dataset, Georgia’s violent crime rates illustrate the enduring dominance of aggravated assault and robbery.
+                       Other categories like homicide and rape appear at comparatively lower levels.</p>
+                </div>
+                
+                <div class="step" data-step="8">
+                    <h5>Interactive Stacked Area Chart</h5>
+                    <p>Looking at the bigger picture, the relative proportions of violent crimes have shifted over time.
+                       While aggravated assault and robbery continue to lead, their dynamics reflect deeper societal trends.</p>
+                    <p style="font-style: italic;">Drag the slider to explore how crime patterns have evolved across different year ranges.</p>
+                </div>
+                
+            </article>
+            <div class="graphic">
+                <svg></svg>
+                <div id="slider-container">
+                    <label for="yearRange">Year range: <span id="yearLabel">1960 – 2019</span></label><br>
+                    <input type="range" id="yearRange" min="1960" max="2019" step="1" value="2019" />
+                </div>
+              
+            </div>
+        </section>
+        <div id="tooltip" style="
+                    position: absolute;
+                    background: white;
+                    padding: 5px 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    pointer-events: none;
+                    font-size: 12px;
+                    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+                    opacity: 0;
+                    transition: opacity 0.2s ease;
+                "></div>
+
+        <section id="outro"></section>
+    </main>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    
+
+    <!-- <script src="./solution.js"></script> -->
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
