@@ -17,6 +17,6 @@ This visualization explores how violent crime patterns have changed across the U
 
 ## Resources
 
-- [https://app.unpkg.com/topojson-client@3.1.0](topoJSON Client)
-- [https://unpkg.com/scrollama](Scrollama)
-= [https://www.brennancenter.org/our-work/research-reports/what-caused-crime-decline](Brennan Center: What Caused the Crime Decline?)
+- [topoJSON Client](https://app.unpkg.com/topojson-client@3.1.0/)
+- [Scrollama](https://unpkg.com/scrollama/)
+- [Brennan Center: What Caused the Crime Decline?](https://www.brennancenter.org/our-work/research-reports/what-caused-crime-decline/)
